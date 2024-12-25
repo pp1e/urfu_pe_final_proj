@@ -1,0 +1,22 @@
+services:
+  todo-app:
+    build: todo_app
+    ports:
+      - "8000:80"
+    environment:
+      - FLASK_ENV=production
+    volumes:
+      - todo_app_data:/data
+
+  shorturl-app:
+    build: shorturl_app
+    ports:
+      - "8001:80"
+    environment:
+      - FLASK_ENV=production
+    volumes:
+      - shorturl_app_data:/data
+
+volumes:
+  todo_app_data:
+  shorturl_app_data:

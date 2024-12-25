@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "todo_app"
+version = "0.1.0"
+description = ""
+authors = ["Denis <malyutin.02@bk.ru>"]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.6"
+uvicorn = "^0.34.0"
+SQLAlchemy = "^2.0.36"
+pydantic = "^2.10.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,4 @@
+*.idea
+*__pycache__*
+shorturl_app/data
+todo_app/data
